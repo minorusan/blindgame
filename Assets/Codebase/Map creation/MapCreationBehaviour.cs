@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core
 {
-    public class IJ
+    public struct IJ
     {
         public int x;
         public int y;
@@ -71,7 +71,8 @@ namespace Core
 
         public Node GetNode(IJ coordinates)
         {
-            return nodes.FirstOrDefault(x => x.coordinates.x == coordinates.x && x.coordinates.y == coordinates.y);
+            var result = nodes.FirstOrDefault(node => node.coordinates.x == coordinates.x && node.coordinates.y == coordinates.y);
+            return result;
         }
     }
 }
