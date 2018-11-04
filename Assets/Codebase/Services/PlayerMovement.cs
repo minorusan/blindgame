@@ -37,11 +37,15 @@ namespace Core
                     }
             }
             var node = _mapCreationBehaviour.GetNode(newStep);
-            node.interaction.PerformInteraction(new Vector3(newStep.x, 0f, newStep.y));
-            if (node != null && !node.isObstacle)
+
+            if (node != null)
             {
-                _currentPosition = newStep;
-                MoveRepresetnation();
+                node.interaction.PerformInteraction(new Vector3(newStep.x, 0f, newStep.y));
+                if (!node.isObstacle)
+                {
+                    _currentPosition = newStep;
+                    MoveRepresetnation();
+                }
             }
         }
 
@@ -74,7 +78,9 @@ namespace Core
 
         private void MoveRepresetnation()
         {
-            _playerRepresentation.transform.position = new Vector3(_currentPosition.x, 0f, _currentPosition.y);
+            var position = new Vector3(_currentPosition.x, 0f, _currentPosition.y);
+            _playerRepresentation.transform.LookAt(position);
+            _playerRepresentation.transform.position = position;
         }
     }
 }
