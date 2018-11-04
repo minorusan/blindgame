@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580245899}
   - component: {fileID: 580245900}
+  - component: {fileID: 580245901}
   m_Layer: 0
   m_Name: ====Logic=============
   m_TagString: Untagged
@@ -298,12 +299,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectablesCount: 0
   mapProvider: {fileID: 11400000, guid: 404a05858227843aea577293ec5407d8, type: 2}
-  obstaclePrefab: {fileID: 1727126044108406, guid: cca523aaf616244b39fb28bd0df7409b,
-    type: 2}
-  defaultPrefab: {fileID: 1664075304805364, guid: ed85cc5e571e04293935c8e8ea2b11b4,
-    type: 2}
-  collectablePrefab: {fileID: 1664075304805364, guid: ebba4b475f2c34dff969d93bc5535ffd,
-    type: 2}
+--- !u!114 &580245901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 580245898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06526b909c214acfab835d47a97b4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570269488
 GameObject:
   m_ObjectHideFlags: 0

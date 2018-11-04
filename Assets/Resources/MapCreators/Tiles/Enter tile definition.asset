@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Enter tile definition
   m_EditorClassIdentifier: 
   color: {r: 0.101960786, g: 0.7372549, b: 0.6117647, a: 1}
-  prefab: {fileID: 1664075304805364, guid: ed85cc5e571e04293935c8e8ea2b11b4, type: 2}
+  prefab: {fileID: 1664075304805364, guid: d8f1029fb094a428e9932bdfe2eb7f05, type: 2}
   continuesSound: {fileID: 0}
   interactionSound: {fileID: 0}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Exit tile definition
   m_EditorClassIdentifier: 
   color: {r: 0.7529412, g: 0.22352941, b: 0.16862746, a: 1}
-  prefab: {fileID: 1664075304805364, guid: ed85cc5e571e04293935c8e8ea2b11b4, type: 2}
+  prefab: {fileID: 1664075304805364, guid: 2d2be6a282bb2420897d46b8d9fcaa88, type: 2}
   continuesSound: {fileID: 0}
   interactionSound: {fileID: 0}

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23345754430897666}
   - component: {fileID: 65047160938062634}
   m_Layer: 0
-  m_Name: Enter
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c35aea3fb589e4449a52ff7765ec63b8, type: 2}
+  - {fileID: 2100000, guid: 80302916bfe3446ec9b7a69fdf1ef3a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
