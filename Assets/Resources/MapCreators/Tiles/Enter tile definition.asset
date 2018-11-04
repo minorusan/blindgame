@@ -14,4 +14,4 @@ MonoBehaviour:
   color: {r: 0.101960786, g: 0.7372549, b: 0.6117647, a: 1}
   prefab: {fileID: 1664075304805364, guid: d8f1029fb094a428e9932bdfe2eb7f05, type: 2}
   continuesSound: {fileID: 0}
-  interactionSound: {fileID: 0}
+  interaction: {fileID: 11400000, guid: 35259ccd6dbe84fca971c1f27d423c90, type: 2}

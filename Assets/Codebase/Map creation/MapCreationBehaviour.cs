@@ -19,6 +19,7 @@ namespace Core
         public bool isCollectable;
 
         public bool visited;
+        public TileInteractionBase interaction;
     }
 
     public class MapCreationBehaviour : MonoBehaviour
@@ -40,7 +41,8 @@ namespace Core
             {
                 for (int j = 0; j < map.GetLength(1); j++)
                 {
-                    GameObject toInstantiate = map[i, j].ToTileDefinition(mapProvider).prefab;
+                    var newNodeDefinition = map[i, j].ToTileDefinition(mapProvider);
+                    GameObject toInstantiate = newNodeDefinition.prefab;
 
                     var newGridCell = Instantiate(toInstantiate, transform);
                     var localPosition = new Vector3(i, 0, j);
@@ -50,7 +52,8 @@ namespace Core
                         isCollectable = map[i, j] == mapProvider.collectableColor,
                         isObstacle = map[i, j] == mapProvider.obstacleColor,
                         isEnterPoint = map[i, j] == mapProvider.enterpointColor,
-                        isExitPoint = map[i, j] == mapProvider.exitpointColor
+                        isExitPoint = map[i, j] == mapProvider.exitpointColor,
+                        interaction = newNodeDefinition.interaction
                     };
 
                     newNode.coordinates = new IJ() { x = i, y = j };

@@ -8,6 +8,11 @@ public static class Extentions
 {
     public static TileDefinition ToTileDefinition(this Color color, MapProviderBase mapProvider)
     {
-        return mapProvider.tiles.FirstOrDefault(x => x.color == color);
+        var result = mapProvider.tiles.FirstOrDefault(x => x.color == color);
+        if (result == null)
+        {
+            return ToTileDefinition(Color.white, mapProvider);
+        }
+        return result;
     }
 }

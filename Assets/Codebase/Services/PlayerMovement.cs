@@ -37,6 +37,7 @@ namespace Core
                     }
             }
             var node = _mapCreationBehaviour.GetNode(newStep);
+            node.interaction.PerformInteraction(new Vector3(newStep.x, 0f, newStep.y));
             if (node != null && !node.isObstacle)
             {
                 _currentPosition = newStep;

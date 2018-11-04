@@ -21,4 +21,4 @@ MonoBehaviour:
   enterpointColor: {r: 0.101960786, g: 0.7372549, b: 0.6117647, a: 1}
   exitpointColor: {r: 0.7529412, g: 0.22352941, b: 0.16862746, a: 1}
   collectableColor: {r: 0.9019608, g: 0.49411765, b: 0.13333334, a: 1}
-  inputTexture: {fileID: 2800000, guid: f4903085aeeaf4364a042e1089094e2d, type: 3}
+  inputTexture: {fileID: 2800000, guid: 3ed5a07adc8f046589ea8ffeccc7c67d, type: 3}
