@@ -11,6 +11,20 @@ public enum EMoveDirection
 public class UIInputBehaviour : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public EMoveDirection direction;
+    public KeyCode key;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(key))
+        {
+            StartCoroutine(WalkRoutine());
+        }
+
+        if (Input.GetKeyUp(key))
+        {
+            StopAllCoroutines();
+        }
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
